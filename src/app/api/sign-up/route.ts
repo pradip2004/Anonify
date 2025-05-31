@@ -84,6 +84,8 @@ export async function POST(req: Request) {
                   )
             }
 
+            console.log(emailResponse)
+
             return Response.json({
                   success: true,
                   message: "User registered successfully. Please check your email for verification code."
